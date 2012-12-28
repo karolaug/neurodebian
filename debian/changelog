@@ -1,3 +1,9 @@
+neurodebian (0.30-karolaug) neurodebian; urgency=low
+
+  * Private build for Karol Auguštin.
+
+ -- Karol Auguštin <karol@augustin.pl>  Sat, 29 Dec 2012 00:42:01 -0200
+
 neurodebian (0.30) neurodebian; urgency=low
 
   * Preparing a new VM image (6.999.b4.20121206) - based on upcoming wheezy
