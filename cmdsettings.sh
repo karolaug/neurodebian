@@ -2,7 +2,7 @@ family=$1
 dist=$2
 
 # basic settings
-cowbuilderroot="/home/neurodebian"
+cowbuilderroot="/home/karolaug/Work/neurodebian-build"
 buildplace="${cowbuilderroot}/build"
 
 # all currently supported dists
