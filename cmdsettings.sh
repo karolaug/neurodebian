@@ -2,7 +2,7 @@ family=$1
 dist=$2
 
 # basic settings
-cowbuilderroot="/home/karolaug/Work/neurodebian-build"
+cowbuilderroot="/home/neurodebian"
 buildplace="${cowbuilderroot}/build"
 
 # all currently supported dists
@@ -12,7 +12,7 @@ alldists="$allnddists debian-sid"
 # default is debian
 aptcache="${cowbuilderroot}/debian_aptcache"
 components="main contrib non-free"
-mirror=" http://ftp.pl.debian.org/debian"
+mirror="http://debian.lcs.mit.edu/debian"
 
 # overwrite necessary bits for ubuntu
 if [ "${family#nd+}" = "ubuntu" ]; then
