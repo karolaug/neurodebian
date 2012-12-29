@@ -360,7 +360,7 @@ if [ -n "$bp_mod_control" ]; then
     printf "${green}Modifying debian/control with given instructions.\n${NC}"
   fi
   bash -c "sed -i $bp_mod_control $sdir/debian/control"
-  $bp_dch_cmd "Used following sed expression to modify debian/control:$bp_mod_control."
+#  $bp_dch_cmd "Used following sed expression to modify debian/control:$bp_mod_control."
 fi
 
 # extract final version
