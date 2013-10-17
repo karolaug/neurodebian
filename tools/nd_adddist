@@ -52,8 +52,8 @@ for a in i386 amd64; do
     cowbuilder --create --basepath ${cow} $opts \
                --components "$components" \
                --mirror "$mirror" \
-               --debootstrapopts --arch=$a \
-               --othermirror "${updates_apt}deb http://neuro.debian.net/debian $dist main contrib non-free"
+               --debootstrapopts --arch=$a 
+    #           --othermirror "${updates_apt}deb http://neuro.debian.net/debian $dist main contrib non-free"
     # deploy our key manually since archive with package is not yet
     # available at this point
     mkdir -p ${cow}/etc/apt/trusted.gpg.d
