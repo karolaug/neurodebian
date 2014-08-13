@@ -2,9 +2,6 @@
 
 . /etc/neurodebian/cmdsettings.sh
 
-if [ -z "$SERIAL" ]; then
-    parallel nd_updatedist -- $alldists
-else
     # Original serial version, we might want to switch between the two
     # upon -j
     for d in $alldists; do
@@ -13,4 +10,3 @@ else
     
       nd_updatedist $dfamily $drelease
     done
-fi
